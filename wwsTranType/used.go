@@ -25,9 +25,4 @@ type WwsModelPack interface {
 	SetAuth(string) int
 	SetDbGorm(*gorm.DB)
 }
-//水流与水面通信模块
-type G上达msg struct {
-	G连接号 []byte
-	G模块好 int
-	G内容  []byte
-}
+

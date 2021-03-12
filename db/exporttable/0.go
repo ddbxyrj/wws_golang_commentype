@@ -7,6 +7,6 @@ type Export用户表1 struct {
 	Show_name string
 }
 
-func (Export用户表) TableName() string {
+func (Export用户表1) TableName() string {
 	return "surha_user_true"
 }

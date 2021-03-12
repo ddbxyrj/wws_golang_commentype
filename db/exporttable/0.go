@@ -1,6 +1,6 @@
 package exporttable
 
-type Export用户表 struct {
+type Export用户表1 struct {
 	ID        int
 	Uid       int `gorm:"Column:user_id"` //UNIQUE
 	Name      string

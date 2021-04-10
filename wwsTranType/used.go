@@ -2,7 +2,6 @@ package wwsTranType
 
 import (
 	"encoding/json"
-	
 
 	log "github.com/sirupsen/logrus"
 	"gorm.io/gorm"
@@ -18,11 +17,9 @@ type WwsConEveryMOdel struct {
 
 //每个模块必须实现的函数
 type WwsModelPack interface {
-	// SetAuth(*[]byte)
-	// authToString() string
-	ProcessMesg(*[]byte) (int, *json.RawMessage)
+	ProcessStringMesg(*[]byte, int8) (int8, *json.RawMessage)
+	ProcessByteMesg(*[]byte, int8) (int8, *[]byte)
 	SetWwsUserInfo(*WwsConEveryMOdel)
-	SetAuth(string) int
+	SetAuth(string) int8
 	SetDbGorm(*gorm.DB)
 }
-

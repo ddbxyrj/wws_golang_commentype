@@ -1,8 +1,7 @@
 package wwsTranType
 
 import (
-	"encoding/json"
-
+	"9.suarha.com/root/wwscommentype.git/wwsTranType/modeRevRspon"
 	log "github.com/sirupsen/logrus"
 	"gorm.io/gorm"
 )
@@ -17,9 +16,11 @@ type WwsConEveryMOdel struct {
 
 //每个模块必须实现的函数
 type WwsModelPack interface {
-	ProcessStringMesg(*[]byte, int8) (int8, *json.RawMessage)
-	ProcessByteMesg(*[]byte, int8) (int8, *[]byte)
+	ProcessMesg(*modeRevRspon.Recv) *modeRevRspon.Resp
+	// ProcessStringMesg(*[]byte, int8) (int8, *json.RawMessage)
+	// ProcessByteMesg(*[]byte, int8) (int8, *[]byte)
 	SetWwsUserInfo(*WwsConEveryMOdel)
 	SetAuth(string) int8
 	SetDbGorm(*gorm.DB)
+	SetChan(chan modeRevRspon.ModePush)
 }

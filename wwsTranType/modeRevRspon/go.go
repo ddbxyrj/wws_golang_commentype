@@ -33,6 +33,8 @@ const (
 	ToClose
 	ToOtherCon
 	NoDo
+	ModeError
+	ParasError
 )
 
 type Resp struct {

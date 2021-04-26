@@ -3,7 +3,7 @@ package modeRevRspon
 type DharmaDoWhat uint8
 
 const (
-	DharmaSendMsg DharmaDoWhat = iota
+	DharmaSendMsg DharmaDoWhat = iota + 1
 	DharmaInfoSendError
 	DharmaINfoRemoteClosed
 )

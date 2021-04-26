@@ -5,14 +5,14 @@ type RevType uint8
 type ToWhere uint8
 
 const (
-	FromCon FromeWhere = iota
+	FromCon FromeWhere = iota + 1
 	From叶集
 	FromFace
 	FromDharma
 	Fromsamsara
 )
 const (
-	RevJson RevType = iota
+	RevJson RevType = iota + 1
 	RevByte
 )
 
@@ -25,7 +25,7 @@ type Recv struct {
 }
 
 const (
-	To叶集 ToWhere = iota
+	To叶集 ToWhere = iota + 1
 	ToDharma
 	Tosamsara
 	ToConJsonType

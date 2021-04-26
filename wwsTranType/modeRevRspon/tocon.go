@@ -3,7 +3,7 @@ package modeRevRspon
 type ToConDoWhat uint8
 
 const (
-	CConClose ToConDoWhat = iota
+	CConClose ToConDoWhat = iota + 1
 	CConSentMsgToCon
 )
 

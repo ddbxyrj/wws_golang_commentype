@@ -22,5 +22,5 @@ type WwsModelPack interface {
 	SetWwsUserInfo(*WwsConEveryMOdel)
 	SetAuth(string) int8
 	SetDbGorm(*gorm.DB)
-	SetChan(chan modeRevRspon.ModePush)
+	SetChan(chan modeRevRspon.ModePush, [16]byte)
 }

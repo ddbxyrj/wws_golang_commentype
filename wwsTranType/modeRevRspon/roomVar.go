@@ -4,7 +4,7 @@ type RoomDoWhat uint8
 
 const (
 	CRoomNew RoomDoWhat = iota + 1
-	CRoomMsg
+	CRoomJsonMsg
 	CRoomJoin
 	CRoomJoinAutoCreat
 	CRoomLeave

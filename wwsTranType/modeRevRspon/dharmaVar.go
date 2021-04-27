@@ -9,6 +9,8 @@ const (
 )
 
 type Dharma struct {
-	DharmaId []byte
-	Dowhat   DharmaDoWhat
+	DharmaId  []byte
+	Dowhat    DharmaDoWhat
+	SamsaraId []byte
+	ConId     []byte
 }

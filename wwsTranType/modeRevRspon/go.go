@@ -59,3 +59,8 @@ type RespForChan struct {
 	Tocon    Tocon
 	Dharma   Dharma
 }
+
+func (s *RespForChan) ToResp() *Resp {
+	Resp := Resp{DateByte: &s.DateByte, To: s.To, MsgType: s.MsgType, Room: s.Room, Tocon: s.Tocon, Dharma: s.Dharma}
+	return &Resp
+}

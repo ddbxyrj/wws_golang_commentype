@@ -40,7 +40,7 @@ const (
 type Resp struct {
 	DateByte *[]byte
 	To       ToWhere
-	MsgType  ToWhere
+	MsgType  RevType
 	Room     Room
 	Tocon    Tocon
 	Dharma   Dharma
@@ -54,7 +54,7 @@ func (s *Resp) ToChan() *RespForChan {
 type RespForChan struct {
 	DateByte []byte
 	To       ToWhere
-	MsgType  ToWhere
+	MsgType  RevType
 	Room     Room
 	Tocon    Tocon
 	Dharma   Dharma

@@ -2,6 +2,6 @@ package modeRevRspon
 
 type ModePush struct {
 	ModeId int
-	Res    Resp
+	Res    RespForChan
 	Key    *[16]byte
 }

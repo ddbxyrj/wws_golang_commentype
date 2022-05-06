@@ -12,7 +12,7 @@ type WwsConEveryMOdel struct {
 	Status *int
 	Uuid   *[]byte
 	Log    *log.Logger
-	Level  *UserLevel
+	Level  UserLevel
 }
 
 //每个模块必须实现的函数

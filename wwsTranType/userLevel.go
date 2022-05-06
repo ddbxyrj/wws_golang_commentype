@@ -7,5 +7,5 @@ type UserLevelMethod interface {
 type UserLevel struct {
 	Org    *[]int
 	Posit  *[]int
-	Method *UserLevelMethod
+	Method UserLevelMethod
 }

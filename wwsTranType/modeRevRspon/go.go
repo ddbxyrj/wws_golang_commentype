@@ -10,6 +10,7 @@ const (
 	FromFace
 	FromDharma
 	Fromsamsara
+	FromWws
 )
 const (
 	RevJson RevType = iota + 1

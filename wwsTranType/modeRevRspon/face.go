@@ -1,17 +1,21 @@
 package modeRevRspon
 
-type WwsDoWahat byte
+type WwsDoWahat struct {
+	RevDate *[]byte
+}
+
+type WwsDo byte
 
 const (
-	InfoConClosed WwsDoWahat = iota + 1
+	InfoConClosed WwsDo = iota + 1
 )
 
-func (s *WwsDoWahat) WwsMesgDoWaht(msg *[]byte) (rs *WwsDoWahat) {
-	if msg == nil || len(*msg) == 0 {
-		var temp WwsDoWahat
+func (s *WwsDoWahat) WwsMesgDoWaht() (rs *WwsDo) {
+	if s.RevDate == nil || len(*s.RevDate) == 0 {
+		var temp WwsDo
 		temp = 0
 		return &temp
 	}
-	temp := (WwsDoWahat)((*msg)[0])
+	temp := (WwsDo)((*s.RevDate)[0])
 	return &temp
 }

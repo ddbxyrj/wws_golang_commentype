@@ -21,8 +21,8 @@ type WwsModelPack interface {
 	// ProcessStringMesg(*[]byte, int8) (int8, *json.RawMessage)
 	// ProcessByteMesg(*[]byte, int8) (int8, *[]byte)
 	SetWwsUserInfo(*WwsConEveryMOdel)
-	SetAuth(string) int8
+	SetAuth(*string) ModAuthBak
 	SetDbGorm(*gorm.DB)
-	SetChan(chan<- modeRevRspon.ModePush, [16]byte)
+	SetChan(chan<- modeRevRspon.ModePush, *[16]byte)
 	InitModel(s *WwsConEveryMOdel) bool
 }

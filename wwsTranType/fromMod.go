@@ -6,4 +6,5 @@ const (
 	AuthCheckOk ModAuthBak = iota + 1
 	AuthVersionLost
 	AuthCheckVersionNotSuit
+	AuthUnJsonErr
 )

@@ -11,7 +11,7 @@ type WwsConEveryMOdel struct {
 	UserId *int
 	Status *int
 	Uuid   *[]byte
-	Log    *log.Logger
+	Log    *log.Entry
 	Level  UserLevel
 }
 
